@@ -1,0 +1,136 @@
+.meet{
+  padding: 140px 0;
+  background: $meet_bg;
+  background-image: url("../images/meet-fir-bg.png"),url("../images/meet-sec-bg.png");
+  background-repeat: no-repeat;
+  background-size: 100px 200px,147px 100px;
+  background-position: calc(50% - 700px) top,calc(50% + 680px) bottom;
+}
+
+.meet__title{
+  max-width: 920px;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 48px;
+  text-align: center;
+  margin: 0;
+  margin-bottom: 64px;
+  color: #FFFFFF;
+  margin-left: auto;
+  margin-right: auto;
+}
+.meet__list {
+  list-style: none;
+  margin: 0;
+  padding-left: 0;
+  display: flex;
+  align-content: center;
+  flex-wrap: wrap;
+  text-align: center;
+  margin: -38px -15px;
+}
+.meet__item {
+  position: relative;
+  margin: 38px 15px;
+  padding: 35px 24px 56px;
+  width: 350px;
+  background: #012F34;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+.meet__button{
+  position: absolute;
+  bottom: -28px;
+  left: 43%;
+  display: inline-block;
+  width: 56px;
+  height: 56px;
+  background: #F67E7E;
+  border-radius: 50%;
+  cursor: pointer;
+  .plus{
+    width: 20px;
+    height: 20px;
+  }
+  &:hover{
+    background: #79C8C7;
+    transform: rotate(45deg);
+    transition: all 0.4s ease;
+  }
+}
+
+.meet__img {
+  width: 96px;
+  height: 96px;
+}
+
+.meet__img ~ .meet__img{
+  width: 24px;
+  height: 24px;
+  margin-left: 16px;
+}
+.meet__name {
+  margin: 0;
+  margin-top: 16px;
+  font-size: 18px;
+  line-height: 28px;
+  color: #79C8C7;
+}
+.meet__jobs {
+  margin: 0;
+  font-size: 15px;
+  line-height: 25px;
+  color: #FFFFFF;
+}
+@media only screen and (max-width:1150px){
+  .meet__list {
+    justify-content: center;
+  }
+}
+
+@media only screen and (max-width:768px){
+  .meet{
+    padding: 100px 0 128px;
+    background-position: calc(50% - 390px) top,calc(50% + 315px) bottom;
+  }
+  
+  .meet__title{
+    margin-bottom: 48px;
+    font-size: 32px;
+    line-height: 32px;
+  }
+  .meet__list{
+    justify-content: center;
+  }
+  .meet__item{
+    width: 281px;
+    margin: 0 6px 76px 6px;
+  }
+}
+@media only screen and (max-width:568px){
+  .meet{
+    padding: 88px 12px 116px;
+    background-position: calc(50% - 280px) calc(50% - 1000px),calc(50% + 210px) bottom;
+  }
+  .meet__item{
+    width: 372px;
+    margin: 0 0 52px 0;
+  }
+}
+@media only screen and (max-width:375px){
+  .meet{
+    background-position: calc(50% - 190px) calc(50% - 997px),calc(50% + 120px) bottom;
+  }
+}
+
+@media
+only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (   min--moz-device-pixel-ratio: 2),
+only screen and (     -o-min-device-pixel-ratio: 2/1),
+only screen and (        min-device-pixel-ratio: 2),
+only screen and (                min-resolution: 192dpi),
+only screen and (                min-resolution: 2dppx) { 
+  
+  .meet{
+    background-image: url("../images/meet-fir-bg@2x.png"),url("../images/meet-sec-bg@2x.png");
+  }
+}

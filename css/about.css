@@ -1,0 +1,114 @@
+.about {
+  padding: 47px 0 120px 0;
+  background: #014E56;
+  background-image: url("../images/about-about-bg.png");
+  background-repeat: no-repeat;
+  background-size: 200px;
+  background-position: calc(50% + 675px) bottom;
+}
+
+.about__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.about__left {
+  width: 100%;
+  max-width: 350px;
+  margin-right: 30px;
+}
+
+.about__left__title {
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 100px;
+  color: #FFFFFF;
+  margin: 0;
+}
+
+.about__right {
+  width: 100%;
+  max-width: 730px;
+}
+
+.about__right__text {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 28px;
+  color: #FFFFFF;
+  margin: 0;
+}
+
+@media only screen and (max-width: 1300px) {
+  .about {
+    background-position: right bottom;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .about {
+    padding: 48px 0 112px;
+    background-position: calc(50% + 400px) bottom;
+  }
+  .about__inner {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
+    max-width: 457px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .about__left {
+    margin-right: 0;
+    margin-bottom: 24px;
+    max-width: 683px;
+  }
+  .about__right__line {
+    display: none;
+  }
+  .about__left__title {
+    font-size: 64px;
+    line-height: 56px;
+  }
+}
+
+@media only screen and (max-width: 568px) {
+  .about {
+    background-position: calc(50% + 280px) calc(50% + 215px);
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .about {
+    padding: 48px 0 108px;
+    background-position: calc(50% + 200px) calc(50% + 215px);
+  }
+  .about__left {
+    margin-right: 0;
+    margin-bottom: 16px;
+    max-width: 327px;
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .about__right {
+    max-width: 327px;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+  }
+  .about__right__text {
+    font-size: 15px;
+    line-height: 28px;
+  }
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+  .about {
+    background-image: url(../../images/hero-left-bg@2x.png);
+  }
+}
+/*# sourceMappingURL=about.css.map */

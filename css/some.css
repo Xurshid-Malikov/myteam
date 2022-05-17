@@ -1,0 +1,105 @@
+.clients {
+  background-image: url(../../images/clients-bg.png);
+  background-repeat: no-repeat;
+  background-size: 200px;
+  background-position: calc(50% - 620px) top;
+  background-color: #012F34;
+  padding: 140px 0;
+}
+
+.clients__title {
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 48px;
+  color: #FFFFFF;
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 64px;
+}
+
+.clients__brends {
+  text-align: center;
+}
+
+.clients__img + .clients__img {
+  margin-left: 75px;
+}
+
+@media only screen and (max-width: 1300px) {
+  .clients {
+    background-position: top left;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .clients {
+    background-position: calc(50% - 300px) calc(50% - 175px);
+    padding: 100px 0;
+  }
+  .clients__inner {
+    max-width: 689px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .clients__title {
+    font-size: 32px;
+    line-height: 32px;
+    max-width: 457px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .clients__brends {
+    text-align: start;
+  }
+  .clients__img {
+    width: 108px;
+    margin-left: 60px;
+  }
+  .clients__img + .clients__img {
+    margin-left: 33px;
+  }
+  .clients__img:nth-child(1) {
+    margin-left: 0;
+  }
+}
+
+@media only screen and (max-width: 568px) {
+  .clients {
+    padding: 88px 0;
+    background-position: calc(50% - 300px) calc(50% - 340px);
+  }
+  .clients__brends {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: 0 auto;
+    text-align: center;
+  }
+  .clients__img {
+    margin-left: 0;
+    width: 160px;
+    margin-bottom: 57px;
+  }
+  .clients__img + .clients__img {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .clients__img:nth-child(5) {
+    margin-bottom: 0;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  .clients {
+    background-position: calc(50% - 200px) calc(50% - 340px);
+  }
+}
+/*# sourceMappingURL=some.css.map */

@@ -8,9 +8,9 @@
   <link rel="stylesheet" href="./css/main.css">
 </head>
 <body>
-  <header class="site__header">
+  <header class="header">
     <div class="container nav-container">
-      <div class="site__header__inner">
+      <div class="header__inner">
         <a class="logo" href="./index.html">
           <img
             class="header-icon"
@@ -29,11 +29,11 @@
               <a class="menu__link" href="about.html">about</a>
             </li>
             <li class="menu__item">
-              <a class="menu__link--open" href="#">contact us</a>
+              <a class="menu__link menu__link--open" href="#">contact us</a>
             </li>
           </ul>
         </nav>
-        <input class="checkbox" type="checkbox" name="" id="" />
+        <input class="checkbox" type="checkbox"/>
             <div class="hamburger-lines">
               <span class="line line1"></span>
               <span class="line line2"></span>
@@ -43,103 +43,347 @@
     </div>
   </header>
   <main>
-    <section class="hero">
+    <section class="about">
       <div class="container">
-        <div class="hero__inner">
-          <h1 class="hero__inner__title">
-            Find the <br/>
-            best <span class="hero__inner__color">talent</span>
-          </h1>
-          <div class="hero__inner__info">
-            <p class="hero__inner__text">
-              Finding the right people and building high performing teams can
-              be hard. Most companies aren't tapping into the abundance of
-              global talent. We're about to change that.
+        <div class="about__inner">
+          <div class="about__left">
+            <h2 class="about__left__title">About</h2>
+          </div>
+          <div class="about__right">
+            <p class="about__right__text">
+              We help companies build dynamic teams made up of top global talent. Using our network 
+              of passionate professionals we drive innovation and deliver incredible outcomes. 
+              Talented, diverse teams shape the best products and experiences. We'll bring those 
+              teams to you.
             </p>
           </div>
         </div>
       </div>
     </section>
-    <section class="build">
+    <section class="meet">
       <div class="container">
-        <div class="build__inner">
-          <div class="build__bot">
-            <h2 class="build__inner__title">
-              Build & manage distributed teams like no one else. 
-            </h2>
-          </div>
-          <div class="build__inner__info">
-            <div class="build__div">
-              <div class="build__div__info">
-                <h3 class="build__div__title">
-                  Experienced Individuals
-                </h3>
-                <p class="build__div__text">
-                  Our network is made up of highly experienced professionals 
-                  who are passionate about what they do.
-                </p>
-              </div>
-            </div>
-            <div class="build__div">
-              <div class="build__div__info">
-                <h3 class="build__div__title">
-                  Easy to Implement
-                </h3>
-                <p class="build__div__text">
-                  Our processes have been refined over years of implementation 
-                  meaning our teams always deliver.
-                </p>
-              </div>
-            </div>
-            <div class="build__div">
-              <div class="build__div__info">
-                <h3 class="build__div__title">
-                  Enhanced Productivity
-                </h3>
-                <p class="build__div__text">
-                  Our customized platform with in-built analytics helps 
-                  you manage your distributed teams.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
+        <h3 class="meet__title">Meet the directors</h3>
+        <ol class="meet__list">
+          <li class="meet__item">
+            <picture>
+              <source
+              type="image/webp"
+              srcset="./images/meet-nikita-marks.webp 1x, ./images/meet-nikita-marks@2x.webp 2x"
+              >
+              <img class="meet__img" 
+              src="./images/meet-nikita-marks.png" 
+              srcset="./images/meet-nikita-marks.png 1x, ./images/meet-nikita-marks@2x.png 2x"
+              width="96" 
+              height="96" 
+              alt="Nikita Marks">
+            </picture>
+            <h4 class="meet__name">Nikita Marks</h4>
+            <p class="meet__jobs">Founder & CEO</p>
+            <button class="meet__button">
+              <img class="plus" src="./images/plus.png" alt="Combined Shape">
+            </button>
+          </li>
+          <li class="meet__item">
+            <picture>
+              <source
+              type="image/webp"
+              srcset="./images/meet-cristian-duncan.webp 1x, ./images/meet-cristian-duncan@2x.webp 2x"
+              >
+              <img class="meet__img" 
+              src="./images/meet-cristian-duncan.png" 
+              srcset="./images/meet-cristian-duncan.png 1x, ./images/meet-cristian-duncan@2x.png 2x"
+              width="96" 
+              height="96" 
+              alt="Cristian Duncan">
+            </picture>
+            <h4 class="meet__name">Cristian Duncan</h4>
+            <p class="meet__jobs">Co-founder & COO</p>
+            <button class="meet__button">
+              <img class="plus" src="./images/plus.png" alt="Combined Shape">
+            </button>
+          </li>
+          <li class="meet__item">
+            <picture>
+              <source
+              type="image/webp"
+              srcset="./images/meet-cruz-hamer.webp 1x, ./images/meet-cruz-hamer@2x.webp 2x"
+              >
+              <img class="meet__img" 
+              src="./images/meet-cruz-hamer.png" 
+              srcset="./images/meet-cruz-hamer.png 1x, ./images/meet-cruz-hamer@2x.png 2x"
+              width="96" 
+              height="96" 
+              alt="Cruz Hamer">
+            </picture>
+            <h4 class="meet__name">Cruz Hamer</h4>
+            <p class="meet__jobs">Co-founder & CTO</p>
+            <button class="meet__button">
+              <img class="plus" src="./images/plus.png" alt="Combined Shape">
+            </button>
+          </li>
+          <li class="meet__item">
+            <picture>
+              <source
+              type="image/webp"
+              srcset="./images/meet-darke-heaton.webp 1x, ./images/meet-darke-heaton@2x.webp 2x"
+              >
+              <img class="meet__img" 
+              src="./images/meet-darke-heaton.png" 
+              srcset="./images/meet-darke-heaton.png 1x, ./images/meet-darke-heaton@2x.png 2x"
+              width="96" 
+              height="96" 
+              alt="Drake Heaton">
+            </picture>
+            <h4 class="meet__name">Drake Heaton</h4>
+            <p class="meet__jobs">Business Development Lead</p>
+            <button class="meet__button">
+              <img class="plus" src="./images/plus.png" alt="Combined Shape">
+            </button>
+          </li>
+          <li class="meet__item">
+            <picture>
+              <source
+              type="image/webp"
+              srcset="./images/meet-griffin-wise.webp 1x, ./images/meet-griffin-wise@2x.webp 2x"
+              >
+              <img class="meet__img" 
+              src="./images/meet-griffin-wise.png" 
+              srcset="./images/meet-griffin-wise.png 1x, ./images/meet-griffin-wise@2x.png 2x"
+              width="96" 
+              height="96" 
+              alt="Griffin Wise">
+            </picture>
+            <h4 class="meet__name">Griffin Wise</h4>
+            <p class="meet__jobs">Lead Marketing</p>
+            <button class="meet__button">
+              <img class="plus" src="./images/plus.png" alt="Combined Shape">
+            </button>
+          </li>
+          <li class="meet__item">
+            <picture>
+              <source
+              type="image/webp"
+              srcset="./images/meet-aden-allan.webp 1x, ./images/meet-aden-allan@2x.webp 2x"
+              >
+              <img class="meet__img" 
+              src="./images/meet-aden-allan.png" 
+              srcset="./images/meet-aden-allan.png 1x, ./images/meet-aden-allan@2x.png 2x"
+              width="96" 
+              height="96" 
+              alt="Aden Allan">
+            </picture>
+            <h4 class="meet__name">Aden Allan</h4>
+            <p class="meet__jobs">Head of Talent</p>
+            <button class="meet__button">
+              <img class="plus" src="./images/plus.png" alt="Combined Shape">
+            </button>
+          </li>
+        </ol>
       </div>
     </section>
-    <section class="deliver">
+    <section class="some">
       <div class="container">
-        <div class="deliver__inner">
-          <div class="deliver__top">
-            <h2 class="deliver__title">Delivering real results for top companies. Some of our 
-              <strong class="deliver__strong">success stories.</strong>
-            </h2>
+        <div class="some__inner">
+          <h3 class="some__title">Some of our clients</h3>
+          <div class="some__brends">
+            <img class="some__img" src="./images/varge.png" width="165" height="28" alt="varge">
+            <img class="some__img" src="./images/jakarta.png" width="184" height="23" alt="jakarta">
+            <img class="some__img" src="./images/guardian.png" width="180" height="28" alt="guardian">
+            <img class="some__img" src="./images/techradar.png" width="165" height="28" alt="techradar">
+            <img class="some__img" src="./images/gadgets-now.png" width="98" height="45" alt="gadgets-now">
           </div>
-          <ul class="deliver__list">
-            <li class="deliver__item">
-              <blockquote class="deliver__text"> “The team perfectly fit the specialized skill set 
-                required. They focused on the most essential features helping us launch the platform 
-                eight months faster than planned.”</blockquote>
-              <strong class="deliver__collor">Kady Baker</strong>
-              <span class="deliver__span">Product Manager at Bookmark</span>
-              <img src="./images/kady-baker.png" alt="Kady Baker image" width="62" height="62">
-            </li>
-            <li class="deliver__item">
-              <blockquote class="deliver__text">“We needed to automate our entire onboarding process. 
-                The team came in and built out the whole journey. Since going live, user retention has 
-                gone through the roof!”</blockquote>
-              <strong class="deliver__collor">Aiysha Reese</strong>
-              <span class="deliver__span">Founder of Manage</span>
-              <img src="./images/aiysha-reese.png" alt="Aiysha Reese image" width="62" height="62">
-            </li>
-            <li class="deliver__item">
-              <blockquote class="deliver__text">“Amazing. Our team helped us build an app that delivered 
-                a new experience for hiring a physio. The launch was an instant success with 100k downloads 
-                in the first month.”</blockquote>
-              <strong class="deliver__collor">Arthur Clarke</strong>
-              <span class="deliver__span">Co-founder of MyPhysio</span>
-              <img src="./images/arthur-clarke.png" alt="Arthur Clarke's image" width="62" height="62">
-            </li>
-          </ul>
+
+          <!-- <div class="some__brends">
+            <picture>
+
+              <source
+              type="image/webp"
+              media="(max-width:475px)"
+              srcset="./images/some-img1-desktop.webp 1x, ./images/some-img1-desktop@2x.webp 2x"
+              >
+
+              <source
+              type="image/webp"
+              media="(max-width:768px)"
+              srcset="./images/some-img1-tablet.webp 1x, ./images/some-img1-tablet@2x.webp 2x"
+              >
+
+              <source
+              type="image/webp"
+              srcset="./images/some-img1-desktop.webp 1x, ./images/some-img1-desktop@2x.webp 2x"
+              >
+
+              <source
+              type="image/webp"
+              media="(max-width:475px)"
+              srcset="./images/some-img1-desktop.png 1x, ./images/some-img1-desktop@2x.png 2x"
+              >
+
+              <source
+              media="(max-width:768px)"
+              srcset="./images/some-img1-tablet.png 1x, ./images/some-img1-tablet@2x.png 2x"
+              >
+
+              <img class="meet__img" 
+              src="./images/some-img1-desktop.png" 
+              srcset="./images/some-img1-desktop.png 1x, ./images/some-img1-desktop@2x.png 2x"
+              width="165" 
+              height="28" 
+              alt="varge">
+            </picture>
+
+            <picture>
+
+              <source
+              type="image/webp"
+              media="(max-width:475px)"
+              srcset="./images/some-img2-desktop.webp 1x, ./images/some-img2-desktop@2x.webp 2x"
+              >
+
+              <source
+              type="image/webp"
+              media="(max-width:768px)"
+              srcset="./images/some-img2-tablet.webp 1x, ./images/some-img2-tablet@2x.webp 2x"
+              >
+
+              <source
+              type="image/webp"
+              srcset="./images/some-img2-desktop.webp 1x, ./images/some-img2-desktop@2x.webp 2x"
+              >
+
+              <source
+              type="image/webp"
+              media="(max-width:475px)"
+              srcset="./images/some-img2-desktop.png 1x, ./images/some-img2-desktop@2x.png 2x"
+              >
+
+              <source
+              media="(max-width:768px)"
+              srcset="./images/some-img2-tablet.png 1x, ./images/some-img2-tablet@2x.png 2x"
+              >
+
+              <img class="meet__img" 
+              src="./images/some-img2-desktop.png" 
+              srcset="./images/some-img2-desktop.png 1x, ./images/some-img2-desktop@2x.png 2x"
+              width="184" 
+              height="23" 
+              alt="jakarta">
+            </picture>
+
+            <picture>
+
+              <source
+              type="image/webp"
+              media="(max-width:475px)"
+              srcset="./images/some-img3-desktop.webp 1x, ./images/some-img3-desktop@2x.webp 2x"
+              >
+
+              <source
+              type="image/webp"
+              media="(max-width:768px)"
+              srcset="./images/some-img3-tablet.webp 1x, ./images/some-img3-tablet@2x.webp 2x"
+              >
+
+              <source
+              type="image/webp"
+              srcset="./images/some-img3-desktop.webp 1x, ./images/some-img3-desktop@2x.webp 2x"
+              >
+
+              <source
+              type="image/webp"
+              media="(max-width:475px)"
+              srcset="./images/some-img3-desktop.png 1x, ./images/some-img3-desktop@2x.png 2x"
+              >
+
+              <source
+              media="(max-width:768px)"
+              srcset="./images/some-img3-tablet.png 1x, ./images/some-img3-tablet@2x.png 2x"
+              >
+
+              <img class="meet__img" 
+              src="./images/some-img3-desktop.png" 
+              srcset="./images/some-img3-desktop.png 1x, ./images/some-img3-desktop@2x.png 2x"
+              width="180" 
+              height="28" 
+              alt="guardian">
+            </picture>
+
+            <picture>
+
+              <source
+              type="image/webp"
+              media="(max-width:475px)"
+              srcset="./images/some-img4-desktop.webp 1x, ./images/some-img4-desktop@2x.webp 2x"
+              >
+
+              <source
+              type="image/webp"
+              media="(max-width:768px)"
+              srcset="./images/some-img4-tablet.webp 1x, ./images/some-img4-tablet@2x.webp 2x"
+              >
+
+              <source
+              type="image/webp"
+              srcset="./images/some-img4-desktop.webp 1x, ./images/some-img4-desktop@2x.webp 2x"
+              >
+
+              <source
+              type="image/webp"
+              media="(max-width:475px)"
+              srcset="./images/some-img4-desktop.png 1x, ./images/some-img4-desktop@2x.png 2x"
+              >
+
+              <source
+              media="(max-width:768px)"
+              srcset="./images/some-img4-tablet.png 1x, ./images/some-img4-tablet@2x.png 2x"
+              >
+
+              <img class="meet__img" 
+              src="./images/some-img4-desktop.png" 
+              srcset="./images/some-img4-desktop.png 1x, ./images/some-img4-desktop@2x.png 2x"
+              width="165" 
+              height="28" 
+              alt="techradar">
+            </picture>
+
+            <picture>
+
+              <source
+              type="image/webp"
+              media="(max-width:475px)"
+              srcset="./images/some-img5-desktop.webp 1x, ./images/some-img5-desktop@2x.webp 2x"
+              >
+
+              <source
+              type="image/webp"
+              media="(max-width:768px)"
+              srcset="./images/some-img5-tablet.webp 1x, ./images/some-img5-tablet@2x.webp 2x"
+              >
+
+              <source
+              type="image/webp"
+              srcset="./images/some-img5-desktop.webp 1x, ./images/some-img5-desktop@2x.webp 2x"
+              >
+
+              <source
+              type="image/webp"
+              media="(max-width:475px)"
+              srcset="./images/some-img5-desktop.png 1x, ./images/some-img5-desktop@2x.png 2x"
+              >
+
+              <source
+              media="(max-width:768px)"
+              srcset="./images/some-img5-tablet.png 1x, ./images/some-img5-tablet@2x.png 2x"
+              >
+
+              <img class="meet__img" 
+              src="./images/some-img1-desktop.png" 
+              srcset="./images/some-img5-desktop.png 1x, ./images/some-img5-desktop@2x.png 2x"
+              width="98" 
+              height="45" 
+              alt="gadgets-now">
+            </picture>
+          </div> -->
         </div>
       </div>
     </section>
@@ -177,8 +421,8 @@
                 </ul>
               </nav>
             </div>
-            <div class="p__text">
-              <p class="p__texts">
+            <div>
+              <p class="footer__left__texts">
                 987  Hillcrest Lane <br> 
                 Irvine, CA <br> 
                 California 92714 <br>
@@ -188,7 +432,7 @@
           </div>
           <div class="footer__right">
             <div class="footer__logos">
-              <a class="footer__right__link" href="#">
+              <a class="footer__right__link" href="https://www.facebook.com/">
                 <svg 
                 width="24" 
                 height="24" 
@@ -200,7 +444,7 @@
                   3.622h-3.12V24h6.116c.73 0 1.323-.593 1.323-1.325V1.325C24 .593 23.407 0 22.675 0Z" 
                   fill="currentColor"/></svg>
               </a>
-              <a class="footer__right__link" href="#">
+              <a class="footer__right__link" href="https://www.pinterest.com/">
                 <svg width="24" height="24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                   <path d="M12 0C5.373 0 0 5.372 0 12c0 5.084 3.163 9.426 7.627 
                   11.174-.105-.949-.2-2.405.042-3.441.218-.937 1.407-5.965 
@@ -215,7 +459,7 @@
                   2.853c-.271 1.043-1.002 2.35-1.492 3.146C9.57 23.812 10.763 24 12 
                   24c6.627 0 12-5.373 12-12 0-6.628-5.373-12-12-12Z" fill="currentColor"/></svg>
               </a>
-              <a class="footer__right__link" href="#">
+              <a class="footer__right__link" href="https://twitter.com/">
                 <svg width="24" height="20" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                   <path d="M24 2.557a9.83 9.83 0 0 1-2.828.775A4.932 4.932 0 0 0 23.337.608a9.864 
                   9.864 0 0 1-3.127 1.195A4.916 4.916 0 0 0 16.616.248c-3.179 0-5.515 2.966-4.797 

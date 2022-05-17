@@ -1,0 +1,117 @@
+.some{
+  background-image: url("../images/same-bg.png");
+  background-repeat: no-repeat;
+  background-size: 200px;
+  background-position: calc(50% - 650px) top;
+  background-color: #012F34;
+  padding: 140px 0;
+}
+.some__title {
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 48px;
+  color: #FFFFFF;
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 64px;
+}
+
+.some__brends{
+ text-align: center;
+}
+
+.some__img + .some__img{
+ margin-left: 75px;
+}
+
+@media only screen and (max-width:1150px){
+  .some__img {
+    width: 108px;
+    margin-left: 60px;
+  }
+  .some__img:nth-child(1){
+    margin-left: 0;
+  }
+}
+
+@media only screen and (max-width:956px){
+  .some__img {
+    margin: 0;
+  }
+  .some__img + .some__img{
+    margin-left: 33px;
+  }
+}
+
+@media only screen and (max-width:768px){
+  .some{
+    background-position: calc(50% - 300px) calc(50% - 175px);
+    padding: 100px 0;
+  }
+  .some__inner{
+    max-width: 689px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .some__title{
+    font-size: 32px;
+    line-height: 32px;
+    max-width: 457px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .some__brends{
+    text-align: start;
+  }
+  .some__img {
+    margin-bottom: 30px;
+    margin-left: 33px;
+  }
+  .some__img:nth-child(1){
+    margin-left: 0;
+  }
+}
+@media only screen and(max-width:568px){
+  .some{
+    padding: 88px 0;
+    background-position: calc(50% - 300px) calc(50% - 340px);
+  }
+  .some__brends{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    text-align: center;
+  }
+  .some__img{
+    margin-left: 0;
+    width: 160px;
+    margin-bottom: 57px;
+  }
+  .some__img + .some__img{
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .some__img:nth-child(5){
+    margin-bottom: 0;
+  }
+}
+@media only screen and (max-width: 355px){
+  .some{
+    background-position: calc(50% - 200px) calc(50% - 340px);
+  }
+}
+
+@media
+only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (   min--moz-device-pixel-ratio: 2),
+only screen and (     -o-min-device-pixel-ratio: 2/1),
+only screen and (        min-device-pixel-ratio: 2),
+only screen and (                min-resolution: 192dpi),
+only screen and (                min-resolution: 2dppx) { 
+  
+  .some{
+    background-image: url("../images/same-bg@2x.png");
+  }
+}

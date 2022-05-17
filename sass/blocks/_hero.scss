@@ -2,7 +2,7 @@
   position: relative;
   background-color: $header_bg;
   padding: 0 0 250px 0;
-  background-image: url("../images/hero-bg-first.png"), url("../images/hero-bg-img-second.svg");
+  background-image: url("../images/home-hero-bg.png"), url("../images/home-hero-bg-second.png");
   background-repeat: no-repeat;
   background-size: 200px 200px, 358px 100px;
   background-position: calc(50% - 760px) calc(50% - 120px), calc(50% + 385px) bottom;
@@ -107,3 +107,27 @@
     line-height: 40px;
   }
 }
+
+
+@media
+only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (   min--moz-device-pixel-ratio: 2),
+only screen and (     -o-min-device-pixel-ratio: 2/1),
+only screen and (        min-device-pixel-ratio: 2),
+only screen and (                min-resolution: 192dpi),
+only screen and (                min-resolution: 2dppx) { 
+  
+  .hero{
+    background-image: url("../images/home-hero-bg@2x.png"),url("../images/home-hero-bg-second@2x.png");
+  }
+  @include max-width(850px) {
+    .hero {
+      background-image: url("../images/home-hero-bg-second@2x.png");
+   }
+  }
+  @include max-width(576px) {
+    .hero {
+      background-image: url("../images/home-hero-bg-second@2x.png");
+   }
+  }
+} 

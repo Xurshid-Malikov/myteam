@@ -1,0 +1,179 @@
+.direktor {
+  padding: 140px 0;
+  background: #004047;
+  background-image: url(../../images/direk-left-bg.png), url(../../images/direk-right-bg.png);
+  background-repeat: no-repeat;
+  background-size: 200px,147px 100px;
+  background-position: calc(50% - 690px) top, calc(50% + 650px) bottom;
+}
+
+.direktor__title {
+  max-width: 920px;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 48px;
+  text-align: center;
+  margin: 0;
+  margin-bottom: 64px;
+  color: #FFFFFF;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.direktor__list {
+  list-style: none;
+  margin: 0;
+  padding-left: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  text-align: center;
+  margin: -38px -15px;
+}
+
+.direktor__item {
+  position: relative;
+  margin: 38px 15px;
+  padding: 35px 24px 56px;
+  width: 350px;
+  background: #012F34;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+          box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  cursor: pointer;
+}
+
+.direktor__item:hover {
+  background-color: #9fad20;
+}
+
+.direktor__button {
+  position: absolute;
+  bottom: -28px;
+  left: 43%;
+  display: inline-block;
+  width: 56px;
+  height: 56px;
+  background: #F67E7E;
+  border-radius: 50%;
+}
+
+.direktor__button:hover {
+  background: #79C8C7;
+  -webkit-transform: rotate(135deg);
+          transform: rotate(135deg);
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.item-modifile {
+  -webkit-transform: rotate(135deg);
+          transform: rotate(135deg);
+}
+
+.item-modifile:hover {
+  -webkit-transform: none;
+          transform: none;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.direktor__img {
+  width: 96px;
+  height: 96px;
+}
+
+.modifile-name {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 28px;
+  color: #79C8C7;
+  margin-bottom: 8;
+  margin: 0;
+}
+
+.modifile-jobs {
+  margin: 0;
+  margin-bottom: 24px;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 25px;
+  color: #FFFFFF;
+}
+
+.modifile-img ~ .modifile-img {
+  width: 24px;
+  height: 24px;
+  margin-left: 16px;
+}
+
+.direktor__name {
+  margin: 0;
+  margin-top: 16px;
+  font-size: 18px;
+  line-height: 28px;
+  color: #79C8C7;
+}
+
+.direktor__jobs {
+  margin: 0;
+  font-size: 15px;
+  line-height: 25px;
+  color: #FFFFFF;
+}
+
+@media only screen and (max-width: 1250px) {
+  .direktor {
+    background-position: top left,right bottom;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .direktor {
+    padding: 100px 0 128px;
+    background-position: calc(50% - 390px) top, calc(50% + 315px) bottom;
+  }
+  .direktor__title {
+    margin-bottom: 48px;
+    font-size: 32px;
+    line-height: 32px;
+  }
+  .direktor__list {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .direktor__item {
+    width: 281px;
+    margin: 38px 6px;
+  }
+}
+
+@media only screen and (max-width: 568px) {
+  .direktor {
+    padding: 88px 12px 116px;
+    background-position: calc(50% - 280px) calc(50% - 1000px), calc(50% + 210px) calc(50% + 950px);
+  }
+  .direktor__item {
+    width: 372px;
+    margin: 26px 0px;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  .direktor {
+    background-position: calc(50% - 190px) calc(50% - 997px), calc(50% + 120px) calc(50% + 955px);
+  }
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+  .direktor {
+    background-image: url(../../images/direk-left-bg@2x.png), url(../../images/direk-right-bg@2x.png);
+  }
+}
+/*# sourceMappingURL=meet.css.map */

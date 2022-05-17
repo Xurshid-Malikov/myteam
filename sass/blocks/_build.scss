@@ -3,7 +3,7 @@
   background-color: $build_bg;
   margin: 0;
   padding: 198px 0 140px 0;
-  background-image: url("../images/build-bgi.png");
+  background-image: url("../images/home-build-bg.png");
   background-repeat: no-repeat;
   background-size: 200px 244px;
   background-position: calc(50% + 759px) bottom;
@@ -50,17 +50,17 @@
 }
 .build__inner__info :nth-child(1){
   &::before {
-    background-image: url("../images/build__man.png");
+    background-image: url("../images/build-man.png");
   }
 }
 .build__inner__info :nth-child(2){
   &::before {
-    background-image: url("../images/build__nas.png");
+    background-image: url("../images/build-bolt.png");
   }
 }
 .build__inner__info :nth-child(3){
   &::before {
-    background-image: url("../images/build__incr.png");
+    background-image: url("../images/build-inc.png");
   }
 }
 .build__div + .build__div{
@@ -171,5 +171,33 @@
 @include max-width(426px) {
   .build {
     background-position: calc(50% + 209px) top;
+  }
+}
+
+@media
+only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (   min--moz-device-pixel-ratio: 2),
+only screen and (     -o-min-device-pixel-ratio: 2/1),
+only screen and (        min-device-pixel-ratio: 2),
+only screen and (                min-resolution: 192dpi),
+only screen and (                min-resolution: 2dppx) { 
+  
+  .build {
+    background-image: url("../images/home-build-bg@2x.png");
+  }
+  .build__inner__info :nth-child(1){
+    &::before {
+      background-image: url("../images/build-man@2x.png");
+    }
+  }
+  .build__inner__info :nth-child(2){
+    &::before {
+      background-image: url("../images/build-bolt@2x.png");
+    }
+  }
+  .build__inner__info :nth-child(3){
+    &::before {
+      background-image: url("../images/build-inc@2x.png");
+    }
   }
 }
